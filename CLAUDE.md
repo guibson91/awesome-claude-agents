@@ -94,7 +94,7 @@ The project follows a hierarchical structure:
 
 4. **Specialized Agents** (`agents/specialized/`)
    - Framework-specific experts organized by technology
-   - Subdirectories: laravel/, django/, rails/, react/, vue/
+   - Subdirectories: laravel/, django/, rails/, react/, vue/, angular/, python/, automation/
 
 ### Three-Phase Orchestration Workflow (Main Agent Coordinated)
 
@@ -255,9 +255,64 @@ Main Agent: "Based on the tech-lead's routing, I'll now coordinate the implement
 ❌ "I'll skip the tech-lead and choose agents myself" (bypasses routing)
 ```
 
+## Framework-Specific Agent Usage
+
+### Angular Projects
+When working with Angular codebases, the following specialists are available:
+
+- **angular-architect**: Primary Angular development agent for components, routing, dependency injection, and architecture
+- **angular-rxjs-expert**: Reactive programming specialist for complex observable streams and state management
+- **angular-testing-expert**: Testing specialist for comprehensive test coverage with Jasmine/Karma
+- **angular-material-ui-expert**: UI/UX specialist for Material Design components, theming, and accessibility
+
+**Example routing:**
+```
+Angular Feature Request → tech-lead-orchestrator → angular-architect (core logic)
+→ angular-material-ui-expert (UI) → angular-testing-expert (tests) → code-reviewer
+```
+
+### Python Projects
+When working with Python codebases, specialized Python agents are available:
+
+- **python-expert**: Modern Python 3.12+ development, FastAPI/Flask APIs, and architecture
+- **django-expert**: Complete Django 5.0+ web development with DRF and Celery
+- **fastapi-expert**: High-performance async APIs with FastAPI and Pydantic V2
+- **ml-data-expert**: Machine learning, data science, TensorFlow, PyTorch
+- **devops-cicd-expert**: Python DevOps, deployment automation, containerization
+- **performance-expert**: Python performance optimization and profiling
+- **testing-expert**: Comprehensive testing with pytest and test automation
+- **security-expert**: Python security, cryptography, secure coding practices
+- **web-scraping-expert**: Web scraping, data extraction, async techniques
+
+**Example routing:**
+```
+Python API Project → tech-lead-orchestrator → fastapi-expert (API implementation)
+→ testing-expert (test coverage) → security-expert (security audit) → code-reviewer
+```
+
+### Automation & AI Integration Projects
+When working with workflow automation, chatbots, or AI-powered systems:
+
+- **ai-automation-architect**: Expert in n8n, Dify.ai, workflow orchestration, LLM integrations, messaging platforms (WhatsApp, Telegram), and intelligent automation systems
+
+**Use when:**
+- Building chatbots or conversational AI systems
+- Creating workflow automations with n8n, Dify, Make, or Zapier
+- Integrating LLMs (OpenAI, Claude, local models) into applications
+- Implementing RAG systems with vector databases
+- Designing multi-platform automation (databases, APIs, messaging)
+- Working with Ynovation infrastructure (Digital Ocean, Railway, Supabase, Dify)
+
+**Example routing:**
+```
+"Build WhatsApp AI bot" → tech-lead-orchestrator → ai-automation-architect (workflow design)
+→ backend-developer (API endpoints) → code-reviewer (security audit)
+```
+
 ## Critical Reminders
 
 - ALWAYS use tech-lead-orchestrator for multi-step tasks to get proper agent routing
 - FOLLOW the agent routing map exactly - do not improvise
 - USE deep reasoning when coordinating the recommended agents
 - TRUST the tech-lead's expertise in agent selection
+- CONSULT framework-specific agents (Angular, Python, Automation) when stack is detected

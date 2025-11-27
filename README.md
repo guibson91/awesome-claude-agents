@@ -61,7 +61,7 @@ cp -r awesome-claude-agents/agents ~/.claude/agents/awesome-claude-agents
 
 ```bash
 claude /agents
-# Should show all 24 agents.
+# Should show all 38 agents.
 ```
 
 ### 3. Initialize Your Project
@@ -109,7 +109,7 @@ it:
 - **[Team Configurator](agents/orchestrators/team-configurator.md)** - AI team setup expert who
   detects your stack and configures optimal agent mappings
 
-### 💼 Framework Specialists (13 agents)
+### 💼 Framework Specialists (27 agents)
 
 - **Laravel (2 agents)**
   - **[Backend Expert](agents/specialized/laravel/laravel-backend-expert.md)** - Comprehensive
@@ -142,6 +142,40 @@ it:
     applications
   - **[State Manager](agents/specialized/vue/vue-state-manager.md)** - Pinia and Vuex state
     architecture
+- **Angular (4 agents)**
+  - **[Angular Architect](agents/specialized/angular/angular-architect.md)** - Enterprise Angular
+    19+ development with standalone components, signals, and modern patterns
+  - **[RxJS Expert](agents/specialized/angular/angular-rxjs-expert.md)** - Reactive programming,
+    observable streams, and advanced RxJS patterns
+  - **[Testing Expert](agents/specialized/angular/angular-testing-expert.md)** - Comprehensive
+    testing with Jasmine/Karma, TestBed, and TDD/BDD approaches
+  - **[Material UI Expert](agents/specialized/angular/angular-material-ui-expert.md)** - Angular
+    Material design, theming, and accessible UI components
+- **Python (9 agents)**
+  - **[Python Expert](agents/specialized/python/python-expert.md)** - Modern Python 3.12+
+    development, FastAPI/Flask APIs, and project architecture
+  - **[Django Expert](agents/specialized/python/django-expert.md)** - Complete Django 5.0+ web
+    development with admin, DRF, and Celery
+  - **[FastAPI Expert](agents/specialized/python/fastapi-expert.md)** - High-performance async APIs
+    with FastAPI and Pydantic V2
+  - **[ML & Data Expert](agents/specialized/python/ml-data-expert.md)** - Machine learning, data
+    science, TensorFlow, PyTorch, and data analysis
+  - **[DevOps & CI/CD Expert](agents/specialized/python/devops-cicd-expert.md)** - Python DevOps,
+    deployment automation, and containerization
+  - **[Performance Expert](agents/specialized/python/performance-expert.md)** - Python performance
+    optimization, profiling, and concurrent programming
+  - **[Testing Expert](agents/specialized/python/testing-expert.md)** - Comprehensive Python testing
+    with pytest, coverage, and test automation
+  - **[Security Expert](agents/specialized/python/security-expert.md)** - Python security,
+    cryptography, and secure coding practices
+  - **[Web Scraping Expert](agents/specialized/python/web-scraping-expert.md)** - Web scraping, data
+    extraction, and automation with modern async techniques
+
+### 🤖 Automation & AI Specialists (1 agent)
+
+- **[AI Automation Architect](agents/specialized/automation/ai-automation-architect.md)** - Expert
+  in n8n, Dify.ai, workflow orchestration, LLM integrations, WhatsApp bots, and intelligent
+  automation systems
 
 ### 🌐 Universal Experts (4 agents)
 
@@ -165,7 +199,7 @@ it:
 - **[Documentation Specialist](agents/core/documentation-specialist.md)** - Crafts comprehensive
   READMEs, API specs, and technical documentation
 
-**Total: 24 specialized agents** working together to build your projects!
+**Total: 38 specialized agents** working together to build your projects!
 
 [Browse all agents →](agents/)
 
